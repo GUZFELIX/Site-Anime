@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episódios Favoritos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/titulo.png" alt="Nanatsu no Taizai">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Página Inicial</a></li>
+                <li><a href="galeria.html"><i class="fas fa-users"></i>Galeria de Personagens</a></li>
+                <li><a href="detalhes.html"><i class="fas fa-user-alt"></i>Detalhes</a></li>
+                <li><a href="episodios.html"><i class="fas fa-film"></i>Episódios Favoritos</a></li>
+                <li><a href="contato.html"><i class="fas fa-envelope"></i>Contato</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button> 
+        </nav>
+    </header>
+
+    <main>
+        <h2>Meus Episódios Favoritos</h2>
+        <p>Confira uma lista dos episódios mais emocionantes de <em>Nanatsu no Taizai</em>.</p>
+
+        <!-- Lista de episódios -->
+        <section id="episodios">
+            <article class="episodio">
+                <h3>Título: Os Sete Pecados Capitais</h3>
+                <p>Número: Episódio 1, temporada 1.</p>
+                <img src="img/episodio1.jpg" alt="Thumbnail do Episódio 1">
+                <p>Descrição: Elizabeth Liones, a terceira princesa do Reino de Liones, está à procura dos Sete Pecados
+                    Capitais, um grupo de Cavaleiros Sagrados extremamente poderoso e perigoso, cujos membros são
+                    considerados criminosos por terem supostamente traído o reino. Ela encontra Meliodas, o dono de um
+                    bar chamado Boar Hat (Chapéu de Porco), acompanhado pelo porco falante Hawk, seu companheiro de
+                    estimação. Ao ser atacado pelo Cavaleiro Sagrado aprendiz Twigo, Meliodas rapidamente supera o
+                    oponente; durante o combate, Meliodas revela a Elizabeth que ele é o Pecado da Ira do Dragão e o
+                    capitão dos Sete Pecados Capitais. Meliodas e Hawk juntam-se a Elizabeth em sua jornada para
+                    encontrar os outros Pecados Capitais a fim de derrotar os Cavaleiros Sagrados, que planejaram um
+                    golpe de estado para derrubar o rei.</p>
+                
+            </article>
+            <article class="episodio">
+                <h3>Título: Heróis</h3>
+                <p>Número: Episódio 24, temporada 1.</p>
+                <img src="img/episodio24.jpg" alt="Thumbnail do Episódio 24, temporada1">
+                <p>Os Sete pecados Capitais e os santos cavaleiros combinam forças na tentativa de derrotar Hendrickson.
+                    Meliodas, com o apoio de seus amigos e aliados, usa sua técnica final para terminar Hendrickson.
+                    Quando Bartra aparece com Merlin, ele ordena aos santos cavaleiros que restaurem o reino e preservem
+                    seu povo como seu "castigo" por iniciar uma guerra santa. Bartra agradece os Sete pecados capitais
+                    por salvar o reino e proteger Elizabeth. Hawk é revivido como um leitão, muito para uma surpresa. As
+                    coisas retornam ao normal dentro do reino, e um festival é realizado à noite. No dia seguinte,
+                    Elizabeth junta-se a Meliodas, Hawk, Diane, Ban, King, Gowther e Merlin para encontrar o último
+                    membro dos Sete pecados capitais, Escanor, o pecado do leão do orgulho.</p>
+                
+            </article>
+            <article class="episodio">
+                <h3>Título: Desde que Você Esteja Aqui</h3>
+                <p>Número: Episódio 24, temporada 2.</p>
+                <img src="img/desdeque.jpg" alt="Thumbnail do Episódio 24, temporada 2">
+                <p>Ban e Merlin sentem algo diferente sobre Meliodas, enquanto ele domina Fraudrin e menospreza-o como
+                    comandante substituto. Isso força Fraudrin a tentar um ataque suicida que destruiria todos os
+                    Liones, mas ver Griamore perceber que ele se importa com o humano, apesar de fingir ser Dreyfus para
+                    esconder sua presença. Quando Griamore agarra Fraudrin e erige um selo para que apenas eles morram,
+                    o demônio percebe o que motivou a traição de Meliodas no passado e cessa seu ataque enquanto permite
+                    que Meliodas o mate...</p>
+                
+            </article>
+        </section>
+        <button id="openTrailer" class="btn-trailer">
+            Assistir ao Trailer do Anime!
+        </button>
+        <div id="trailerModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <iframe id="youtubeVideo" width="560" height="315" src="" title="Trailer do Anime"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>            
+        </div>
+        
+        
+        
+    </main>
+
+    <footer>
+        <ul class="footer">
+            <li>
+                <p>Desenvolvido por: Gustavo Félix</p>
+            </li>
+            <li>
+                <a href="https://github.com/GUZFELIX" target="_blank">
+                    <i class="fab fa-github"></i> Visite meu Github!
+                </a>
+            </li>
+            <li>
+                &copy; 2024, Todos os direitos reservados.
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

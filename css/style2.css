@@ -1,0 +1,25 @@
+[data-theme="dark"] {
+    background-color: #333; /* Fundo escuro */
+    color: white; /* Cor do texto no modo escuro */
+}
+
+[data-theme="dark"] header {
+    background-color: #222; /* Fundo escuro para o cabeçalho */
+}
+
+[data-theme="dark"] footer {
+    background-color: #222; /* Fundo escuro para o rodapé */
+}
+
+[data-theme="dark"] .theme-toggle {
+    color: yellow; /* Ícone de alternância de tema */
+}
+
+/* Estilo do botão de alternância de tema */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}

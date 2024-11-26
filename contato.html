@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma de contato</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/titulo.png" alt="Nanatsu no Taizai">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Página Inicial</a></li>
+                <li><a href="galeria.html"><i class="fas fa-users"></i>Galeria de Personagens</a></li>
+                <li><a href="detalhes.html"><i class="fas fa-user-alt"></i>Detalhes</a></li>
+                <li><a href="episodios.html"><i class="fas fa-film"></i>Episódios Favoritos</a></li>
+                <li><a href="contato.html"><i class="fas fa-envelope"></i>Contato</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button> 
+        </nav>
+    </header>
+        <div class="contato">
+            <form action="#" method="POST">
+                <h1>Entre em contato:</h1>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    <footer>
+        <ul class="footer">
+            <li>
+                <p>Desenvolvido por: Gustavo Félix</p>
+            </li>
+            <li>
+                <a href="https://github.com/GUZFELIX" target="_blank">
+                    <i class="fab fa-github"></i> Visite meu Github!
+                </a>
+            </li>
+            <li>
+                &copy; 2024, Todos os direitos reservados.
+            </li>
+        </ul>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,694 @@
+/*Css geral*/
+/* Css geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav i {
+    font-size: 18px;
+    margin-right: 8px;
+    color: #da1313;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none; /* Esconde os links em telas pequenas */
+        width: 100%;
+        text-align: center;
+        background-color: #865914;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block; /* Mostra o botão hamburger */
+    }
+
+    .navbar.active .nav-links {
+        display: block; /* Exibe o menu quando o hambúrguer for clicado */
+    }
+}
+
+footer {
+    background-color:#bbab62;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    border-top: 2px solid #865914;
+    position: relative;
+}
+
+footer a {
+    color: #d64c15;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #f0a35e;
+}
+
+footer i {
+    font-size: 18px;
+    margin-right: 8px;
+    color: #9504b9;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-image: url(../img/fundo.png);
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'rubik', helvetica, arial, sans-serif;
+}
+
+body p {
+    font-size: 18px;
+}
+
+/* Estilo Global para o Header */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #bbab62;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #865914;
+}
+
+header .logo img {
+    max-height: 100px;
+    width: auto;
+    display: block;
+}
+
+header .logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo para a navegação no header */
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #d64c15;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    /* Header: ajustar o layout para dispositivos menores */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header .logo {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header: diminuir o tamanho do texto e espaçamento para melhor visualização */
+    header nav ul li a {
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Logo: ajustar o tamanho */
+    header .logo {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    /* Footer: reduzir padding e fonte */
+    footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Ajustar os textos no corpo */
+    body p {
+        font-size: 16px;
+    }
+
+    /* Ajustes no background */
+    body {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Logo: reduzir ainda mais o tamanho */
+    header .logo img {
+        max-height: 80px;
+    }
+
+    /* Navegação: ajustar o tamanho do texto e espaçamento */
+    header nav ul li a {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    /* Footer: ajuste de fonte e padding */
+    footer {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+
+/*Fim do Css geral*/
+
+/*Css página index*/
+/* Centraliza o banner */
+.banner {
+    display: flex;
+    /* Ativa flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente (se necessário) */
+    margin: 40px 0;
+    /* Adiciona espaçamento acima e abaixo */
+}
+
+.banner img {
+    max-width: 100%;
+    /* Adapta a largura da imagem ao container */
+    height: auto;
+    /* Mantém as proporções */
+    border-radius: 8px;
+    /* Cantos levemente arredondados (opcional) */
+    margin-top: 150px;
+}
+
+
+/* Estiliza o texto */
+.anime h2 {
+    text-align: center;
+    /* Centraliza o título */
+    margin: 20px 0;
+    /* Espaçamento ao redor */
+    font-size: 2rem;
+    /* Tamanho do texto */
+    color: #865914;
+    /* Cor do título */
+}
+
+.anime .texto {
+    margin: 20px auto;
+    /* Centraliza horizontalmente */
+    max-width: 800px;
+    /* Limita a largura para facilitar a leitura */
+    font-size: 1.1rem;
+    /* Aumenta um pouco o tamanho da fonte */
+    line-height: 1.6;
+    /* Melhora o espaçamento entre linhas */
+    text-align: justify;
+    /* Justifica o texto */
+    color: #000000;
+    /* Cor do texto */
+}
+
+.anime .texto p {
+    margin-bottom: 20px;
+    /* Espaçamento entre parágrafos */
+}
+
+/*Fim Css página index*/
+
+
+/*Css página dos personagens*/
+/* Galeria */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 200px auto;
+    max-width: 1200px;
+}
+
+.personagem {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.personagem:hover {
+    transform: translateY(-5px);
+}
+
+.personagem img {
+    max-width: 100%;
+    border-bottom: 3px solid #865914;
+}
+
+.personagem h2 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+
+.personagem h2 a {
+    text-decoration: none;
+    color: #29003b;
+}
+
+.personagem h2 a:hover {
+    color: #865914;
+}
+
+.personagem p {
+    font-size: 18px;
+    color: #29003b;
+}
+
+/*Fim do Css da página dos personagens*/
+
+/* Começo CSS da página detalhes dos personagens */
+/* Começo CSS da página detalhes dos personagens */
+.personagem-detalhes {
+    max-width: 1200px;
+    margin: 200px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Espaço consistente entre os cards */
+    justify-content: center; /* Centraliza os cards */
+}
+
+.personagem2 {
+    padding: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 40px); /* Três cards por linha */
+    max-width: 350px;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    align-items: center; /* Centraliza os elementos dentro do card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.personagem2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.personagem2 img.personagem-img {
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    height: 350px; /* Altura fixa consistente para todas as imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir sem distorcer */
+    border: 1px solid #865914;
+    border-bottom: 4px solid #865914; /* Linha decorativa */
+    margin-bottom: 15px;
+}
+
+.personagem2 h2 {
+    font-size: 20px;
+    color: #865914;
+    margin-bottom: 10px;
+}
+
+.personagem2 p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.personagem2 h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #000000;
+}
+
+/* Lista de Habilidades */
+.personagem2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove margens padrão */
+    text-align: left; /* Alinha texto à esquerda */
+    width: 100%; /* Garante que a lista ocupe a largura do card */
+}
+
+.personagem2 ul li {
+    margin: 10px 0;
+    color: #000000;
+    font-size: 16px;
+}
+
+.personagem2 ul li strong {
+    color: #865914;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+    .personagem-detalhes {
+        margin: 50px auto; /* Reduz o espaço superior */
+        padding: 10px; /* Ajusta o espaçamento interno */
+    }
+
+    .personagem2 {
+        width: calc(50% - 40px); /* Dois cards por linha */
+        max-width: 500px; /* Aumenta a largura dos cards */
+    }
+
+    .personagem2 img.personagem-img {
+        height: 250px; /* Ajusta a altura da imagem em telas menores */
+    }
+
+    .personagem2 h2 {
+        font-size: 18px; /* Reduz o tamanho do título */
+    }
+
+    .personagem2 p {
+        font-size: 16px; /* Ajusta o tamanho do texto */
+    }
+
+    .personagem2 h3 {
+        font-size: 16px; /* Ajusta o tamanho do subtítulo */
+    }
+}
+
+@media (max-width: 480px) {
+    .personagem-detalhes {
+        margin: 30px auto; /* Reduz mais o espaço superior */
+    }
+
+    .personagem2 {
+        width: 100%; /* Um card por linha */
+        max-width: 100%; /* Largura total */
+    }
+
+    .personagem2 img.personagem-img {
+        height: 200px; /* Ajusta ainda mais a altura da imagem */
+    }
+
+    .personagem2 h2 {
+        font-size: 16px; /* Reduz o tamanho do título */
+    }
+
+    .personagem2 p {
+        font-size: 14px; /* Ajusta o tamanho do texto */
+    }
+
+    .personagem2 h3 {
+        font-size: 14px; /* Ajusta o tamanho do subtítulo */
+    }
+}
+
+/* Fim do CSS da página detalhes dos personagens */
+
+
+/* Css página episódio*/
+main h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #865914;
+    margin: 20px 0;
+}
+
+main p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Episódios */
+#episodios {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.episodio {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.episodio:last-child {
+    border-bottom: none;
+}
+
+.episodio h3 {
+    font-size: 24px;
+    color: #865914;
+    margin-bottom: 10px;
+}
+
+.episodio img {
+    width: 100%;
+    max-width: 800px;
+    margin: 15px 0;
+    height: auto;
+    border-radius: 5px;
+}
+
+.episodio p {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Botão do trailer */
+.btn-trailer {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #865914;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-trailer:hover {
+    background-color: #5e3b10;
+}
+
+/* Modal do trailer */
+.modal {
+    display: none;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o modal */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
+    z-index: 1000; /* Para sobrepor outros elementos */
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    position: relative;
+    width: 80%; /* Ocupa 80% da largura em telas menores */
+    max-width: 800px; /* Limita a largura máxima */
+    background-color: #000000; /* Fundo preto */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do iframe (vídeo do trailer) */
+.modal-content iframe {
+    width: 80%; /* Preenche a largura disponível */
+    height: 450px; /* Altura proporcional para exibir o vídeo */
+    border: none;
+    border-radius: 5px;
+}
+
+/* Fechar modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #ff9b06; /* Destaque no hover */
+}
+
+/*fim Css página episódio*/
+
+/*Início Css página contato*/
+.contato{
+    gap: 15px;
+    margin: 0 auto;
+    width: 300px;
+    height: 100vh;
+    display: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    margin: 200px auto;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    width: 100%;
+    /* Largura total */
+    max-width: 400px;
+    /* Largura máxima de 400px */
+    margin-bottom: 10px;
+    /* Espaçamento inferior */
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    /* Padding interno */
+    border: none;
+    /* Remove a borda */
+    border-radius: 4px;
+    /* Cantos arredondados */
+}
+
+form button {
+    padding: 10px;
+    /* Padding interno */
+    background-color: #865914;
+    /* Cor de fundo azul */
+    color: #fff;
+    /* Cor do texto branca */
+    border: none;
+    /* Remove a borda */
+    border-radius: 4px;
+    /* Cantos arredondados */
+    cursor: pointer;
+    /* Indica que é clicável */
+}
+
+form button:hover {
+    background-color: #d64c15;
+    /* Cor de fundo ao passar o mouse */
+}
+
+/*Fim Css página contato*/ 
+/*RESPONSIVIDADE*/
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .anime .texto {
+        padding: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%; /* Aumenta a largura do modal para caber melhor em telas pequenas */
+        padding: 15px; /* Reduz o padding para telas menores */
+    }
+
+    .modal-content iframe {
+        height: 300px; /* Reduz a altura do vídeo em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 100%; /* O modal ocupa 100% da largura da tela em dispositivos muito pequenos */
+        padding: 10px; /* Reduz ainda mais o padding */
+    }
+
+    .modal-content iframe {
+        height: 250px; /* Reduz ainda mais a altura do vídeo para telas muito pequenas */
+    }
+
+    .close {
+        font-size: 20px; /* Diminuímos o tamanho do botão de fechar em telas muito pequenas */
+        top: 5px; /* Ajusta a posição do botão de fechar */
+        right: 10px; /* Ajusta a posição do botão de fechar */
+    }
+}
+/*FIM DA RESPOSIVIDADE*/
